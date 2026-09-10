@@ -184,17 +184,26 @@ is_attendance_valid = attendance >= 75
 is_income_valid = income <= 300000
 
 
-if is_age_valid and is_marks_valid and is_attendance_valid and is_income_valid:
-    print("\nScholarship Approved")
-else:
-    print("\nScholarship Rejected")
-    print("Reason:")
+# if is_age_valid and is_marks_valid and is_attendance_valid and is_income_valid:
+#     print("\nScholarship Approved")
+# else:
+#     print("\nScholarship Rejected")
+#     print("Reason:")
     
-    if not is_age_valid:
-        print("- Age must be between 18 and 25")
-    if not is_marks_valid:
-        print("- Marks below 85")
-    if not is_attendance_valid:
-        print("- Attendance below 75%")
-    if not is_income_valid:
-        print("- Family income above ₹300,000")
+#     if not is_age_valid:
+#         print("- Age must be between 18 and 25")
+#     if not is_marks_valid:
+#         print("- Marks below 85")
+#     if not is_attendance_valid:
+#         print("- Attendance below 75%")
+#     if not is_income_valid:
+#         print("- Family income above ₹300,000")
+
+#for addition of number in 3 digit number
+
+a=int(input("enter your number"))
+b=a%10
+c=a//10
+d=c%10
+e=c//10
+print(b+d+e)

@@ -15,17 +15,19 @@
 #     print("Uppercase")
 # elif "a" <= asd <= "z":
 #     print("lowercase")
-# elif 0<= asd <= 9:
+# elif asd in "@#$%&*!":
+#     print("Special character")
+# elif 0<= int(asd) <= 9:
 #     print("degit")
 # else:
-#     print("special cherecter")
+#     print("enter valid value")
 
 #3
 
 # asd1 = input("input:-").lower()
 # if asd1 == "a" or asd1 == "e" or asd1 =="i" or asd1 =="o" or asd1 =="u":
 #     print("vowel")
-# elif asd1 !="a" or asd1 !="e" or asd1 !="i" or asd1 !="o" or asd1 !="u":
+# elif asd1 =="b" or asd1 =="c" or asd1 =="d" or asd1 =="f" or asd1 =="g" or asd1 =="h" or asd1 =="j"or asd1 =="k" or asd1 =="l" or asd1 =="m" or asd1 =="n" or asd1 =="p" or asd1 =="r" or asd1 =="s" or asd1 =="t" or asd1 =="v" or asd1 =="w" or asd1 =="x" or asd1 =="y" or asd1 =="z":
 #     print("Consonant")
 # else:
 #     print("invalid input")
@@ -69,35 +71,35 @@
 
 #7
 
-# a=int(input("enter your first number"))
+a=int(input("enter your first number"))
 
-# b=int(input("enter your second number"))
+b=int(input("enter your second number"))
 
-# print("1.addition\n2.subtaration\n3.multiplication\n4.division\n5.flor division\n choose your opretion")
+print("1.addition\n2.subtaration\n3.multiplication\n4.division\n5.flor division\n choose your opretion")
 
-# aop=int(input("eneter your opretion number"))
+aop=int(input("eneter your opretion number"))
 
-# if aop == 1:
+if aop == 1:
 
-#     print(a+b)
+    print(a+b)
 
-# elif aop == 2:
+elif aop == 2:
 
-#     print(a-b)
+    print(a-b)
 
-# elif aop == 3:
+elif aop == 3:
 
-#     print(a*b)
+    print(a*b)
 
-# elif aop == 4:
+elif aop == 4:
 
-#     print(a/b)
+    print(a/b)
 
-# elif aop == 5:
+elif aop == 5:
 
-#     print(a//b)
-# else:
-#     print("you choose other number")
+    print(a//b)
+else:
+    print("you choose other number")
 
 #8
 
@@ -129,10 +131,10 @@
 
 #10
 
-e,f,g=map(int,input("enter triangle sides value").split())
-if (e + f > g) and (e + g > f) and (f + g > e):
-        print("Valid triangle")
-else:
-        print("Invalid triangle")
+# e,f,g=map(int,input("enter triangle sides value").split())
+# if (e + f > g) and (e + g > f) and (f + g > e):
+#         print("Valid triangle")
+# else:
+#         print("Invalid triangle")
 
 
