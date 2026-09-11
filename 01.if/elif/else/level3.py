@@ -84,26 +84,26 @@
 
 #6
 
-# day = int(input("Enter Day: "))
-# month = int(input("Enter Month: "))
-# year = int(input("Enter Year: "))
+day = int(input("Enter Day: "))
+month = int(input("Enter Month: "))
+year = int(input("Enter Year: "))
 
-# if month < 1 or month > 12:
-#     print(f"{day:02d}/{month:02d}/{year} → Invalid (Month must be between 1 and 12)")
-# else:
+if month < 1 or month > 12:
+    print(f"{day:02d}/{month:02d}/{year} → Invalid (Month must be between 1 and 12)")
+else:
 
-#     is_leap = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+    is_leap = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
     
-#     if month == 2:
-#         max_days = 29 if is_leap else 28
-#     elif month in [4, 6, 9, 11]:
-#         max_days = 30
-#     else:
-#         max_days = 31
-#     if 1 <= day <= max_days:
-#         print(f"{day:02d}/{month:02d}/{year} → Valid")
-#     else:
-#         print(f"{day:02d}/{month:02d}/{year} → Invalid")
+    if month == 2:
+        max_days = 29 if is_leap else 28
+    elif month in [4, 6, 9, 11]:
+        max_days = 30
+    else:
+        max_days = 31
+    if 1 <= day <= max_days:
+        print(f"{day:02d}/{month:02d}/{year} → Valid")
+    else:
+        print(f"{day:02d}/{month:02d}/{year} → Invalid")
 
 #7
 
@@ -172,16 +172,16 @@
 
 #10
 
-age = int(input("Enter Age: "))
-marks = float(input("Enter Marks: "))
-income = float(input("Enter Family Income (₹): "))
-attendance = float(input("Enter Attendance (%): "))
+# age = int(input("Enter Age: "))
+# marks = float(input("Enter Marks: "))
+# income = float(input("Enter Family Income (₹): "))
+# attendance = float(input("Enter Attendance (%): "))
 
 
-is_age_valid = 18 <= age <= 25
-is_marks_valid = marks >= 85
-is_attendance_valid = attendance >= 75
-is_income_valid = income <= 300000
+# is_age_valid = 18 <= age <= 25
+# is_marks_valid = marks >= 85
+# is_attendance_valid = attendance >= 75
+# is_income_valid = income <= 300000
 
 
 # if is_age_valid and is_marks_valid and is_attendance_valid and is_income_valid:
