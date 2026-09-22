@@ -829,25 +829,101 @@
 #     print()
 
 #26
-Poor = 0
-average = 0
-good =0
-excellent=0
-outstanding=0
-typ=""
+# Poor = 0
+# average = 0
+# good =0
+# excellent=0
+# outstanding=0
+# typ=""
+# rat1=0
 
-for i in range(10):
-    rat = int(input("enter ratings of movie",i,"(0-10):-"))
-    if rat>9:
-        Poor +=1
-        typ="poor"
-    elif rat > 7:
-        average+=1
-        typ="average"
-    elif rat > 5:
-        good += 1
-        typ="good"
-    elif rat > 3:
-        excellent+=1
-        typ=""
+# for i in range(10):
+#     rat = int(input("enter ratings of movie(0-10):-"))
+#     if rat>9:
+#         outstanding +=1
+#         typ="outstanding"
+#         rat1+=rat
+#     elif rat > 7:
+#         excellent+=1
+#         typ="excellent"
+#         rat1+=rat
+#     elif rat > 5:
+#         good += 1
+#         typ="good"
+#         rat1+=rat
+#     elif rat > 3:
+#         average+=1
+#         typ="average"
+#         rat1+=rat
+#     elif rat > 0:
+#         Poor+=1
+#         typ="poor"
+#     print(f"movie is {typ}")
+# print(f"poor:{Poor}")
+# print(f"average:{average}")
+# print(f"good:{good}")
+# print(f"excellent:{excellent}")
+# print(f"outstanding:{outstanding}")
 
+
+#27 in dout by ai
+
+# sentence = input("Enter a sentence: ")
+
+# words = sentence.split()
+
+# for i in range(len(words)):
+#     already_checked = False
+
+#     for k in range(i):
+#         if words[i] == words[k]:
+#             already_checked = True
+
+#     if already_checked == False:
+#         count = 0
+
+#         for j in range(len(words)):
+#             if words[i] == words[j]:
+#                 count += 1
+
+#         if count > 1:
+#             print(words[i], ":", count)
+
+#28
+high =0
+high1=False
+num123=0
+for i in range(1, 11):
+
+    num = input(f"Enter number {i}: ")
+
+    even = 0
+    odd = 0
+
+    for digit in str(num):
+
+        if int(digit) % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+
+    print("Even digits:", even)
+    print("Odd digits:", odd)
+
+
+    if even > odd:
+        print("Even occurs more")
+    elif odd > even:
+        print("Odd occurs more")
+    else:
+        print("Equal")
+       
+    print()
+
+    if even > high:
+        high=even
+        high1=True
+    if high1:
+        num123=num
+print("highest even:",high)
+print(f"heighest event number is {num123}")
