@@ -270,47 +270,7 @@
 
 #9
 
-# text = input("Enter a string: ")
-
-# vowel = 0
-# consonant = 0
-# digit = 0
-# special = 0
-
-# for i in range(len(text)):
-
-#     ch = text[i]
-
-#     if i % 2 == 0:
-#         position_type = "Even"
-#     else:
-#         position_type = "Odd"
-
-#     # Check character type
-#     if ch.lower() in "aeiou":
-#         char_type = "Vowel"
-#         vowel += 1
-
-#     elif ch.isalpha():
-#         char_type = "Consonant"
-#         consonant += 1
-
-#     elif ch.isdigit():
-#         char_type = "Digit"
-#         digit += 1
-
-#     else:
-#         char_type = "Special Character"
-#         special += 1
-
-#     print(ch, "| Position:", i, "|", position_type, "|", char_type)
-
-
-# print("\n--- Character Category Count ---")
-# print("Vowels:", vowel)
-# print("Consonants:", consonant)
-# print("Digits:", digit)
-# print("Special Characters:", special)
+# --
 
 #10 dout
 
@@ -681,7 +641,7 @@
 #     classification = "Safe"
 
 
-# print("\n--- Security Analysis ---")
+
 # print("Contains digits:", has_digit)
 # print("Contains URL-like '.' :", has_dot)
 # print("Contains '@':", has_at)
@@ -890,40 +850,718 @@
 #             print(words[i], ":", count)
 
 #28
-high =0
-high1=False
-num123=0
-for i in range(1, 11):
+# high =0
+# high1=False
+# num123=0
+# for i in range(1, 11):
 
-    num = input(f"Enter number {i}: ")
+#     num = input(f"Enter number {i}: ")
 
-    even = 0
-    odd = 0
+#     even = 0
+#     odd = 0
 
-    for digit in str(num):
+#     for digit in str(num):
 
-        if int(digit) % 2 == 0:
-            even += 1
-        else:
-            odd += 1
+#         if int(digit) % 2 == 0:
+#             even += 1
+#         else:
+#             odd += 1
 
-    print("Even digits:", even)
-    print("Odd digits:", odd)
+#     print("Even digits:", even)
+#     print("Odd digits:", odd)
 
 
-    if even > odd:
-        print("Even occurs more")
-    elif odd > even:
-        print("Odd occurs more")
-    else:
-        print("Equal")
+#     if even > odd:
+#         print("Even occurs more")
+#     elif odd > even:
+#         print("Odd occurs more")
+#     else:
+#         print("Equal")
        
-    print()
+#     print()
 
-    if even > high:
-        high=even
-        high1=True
-    if high1:
-        num123=num
-print("highest even:",high)
-print(f"heighest event number is {num123}")
+#     if even > high:
+#         high=even
+#         high1=True
+#         num123=num
+# print("highest even:",high)
+# print(f"heighest event number is {num123}")
+
+#29 in dout
+
+# for i in range(5):
+#     email = input("Enter email: ")
+
+#     at_count = 0
+#     at_position = -1
+
+#     for j in range(len(email)):
+#         if email[j] == "@":
+#             at_count += 1
+#             at_position = j
+
+#     if " " in email:
+#         print("Invalid")
+
+#     elif at_count != 1:
+#         print("Invalid")
+
+#     elif at_position == 0:
+#         print("Invalid")
+
+#     elif at_position == len(email) - 1:
+#         print("Invalid")
+
+#     else:
+#         domain = email[at_position + 1:]
+
+#         dot_found = False
+
+#         for ch in domain:
+#             if ch == ".":
+#                 dot_found = True
+#                 break
+
+#         if dot_found:
+#             print("Valid")
+#         else:
+#             print("Invalid")
+
+#30
+
+# s = input("Enter a string: ")
+
+# same = 0
+# different = 0
+# both_vowels = 0
+# both_digits = 0
+
+# vowels = "aeiouAEIOU"
+
+# for i in range(len(s)):
+#     for j in range(i + 1, len(s)):
+
+#         # Same characters
+#         if s[i] == s[j]:
+#             same += 1
+#         else:
+#             different += 1
+
+#         if s[i] in vowels and s[j] in vowels:
+#             both_vowels += 1
+
+#         if s[i].isdigit() and s[j].isdigit():
+#             both_digits += 1
+
+# print("Same characters:", same)
+# print("Different characters:", different)
+# print("Both vowels:", both_vowels)
+# print("Both digits:", both_digits)
+
+#31
+
+
+# passed = 0
+# failed = 0
+# highest = 0
+# lowest = 100
+
+# for student in range(1, 6):
+#     total = 0
+#     is_pass = True
+
+#     print("\nStudent", student)
+
+#     for subject in range(1, 6):
+#         marks = int(input("Enter marks for subject " + str(subject) + ": "))
+
+#         total = total + marks
+
+#         if marks < 35:
+#             is_pass = False
+
+#     percentage = total / 5
+
+#     if not is_pass:
+#         grade = "F"
+#         failed = failed + 1
+#     else:
+#         passed = passed + 1
+
+#         if percentage >= 90:
+#             grade = "A+"
+#         elif percentage >= 80:
+#             grade = "A"
+#         elif percentage >= 70:
+#             grade = "B"
+#         elif percentage >= 60:
+#             grade = "C"
+#         elif percentage >= 50:
+#             grade = "D"
+#         else:
+#             grade = "E"
+
+#     if percentage > highest:
+#         highest = percentage
+
+#     if percentage < lowest:
+#         lowest = percentage
+
+#     print("Total:", total)
+#     print("Percentage:", percentage, "%")
+#     print("Grade:", grade)
+
+# print("Passed students:", passed)
+# print("Failed students:", failed)
+# print("Highest percentage:", highest, "%")
+# print("Lowest percentage:", lowest, "%")
+
+#32
+
+# password = input("Enter secret password: ")
+
+# for attempt in range(1, 6):
+#     entered = input("Enter password attempt " + str(attempt) + ": ")
+
+#     matching = 0
+
+#     if len(password) == len(entered):
+#         for i in range(len(password)):
+#             if password[i] == entered[i]:
+#                 matching = matching + 1
+#     else:
+#         limit = min(len(password), len(entered))
+
+#         for i in range(limit):
+#             if password[i] == entered[i]:
+#                 matching = matching + 1
+
+#     print("Matching characters:", matching)
+
+#     if len(password) == len(entered) and matching == len(password):
+#         print("Correct")
+#     else:
+#         print("Incorrect")
+
+#33 by ai
+
+# n = int(input("Enter n: "))
+
+# for row in range(1, n + 1):
+#     for num in range(1, row + 1):
+
+#         count = 0
+
+#         if num >= 2:
+#             for i in range(1, num + 1):
+#                 if num % i == 0:
+#                     count += 1
+
+#         if count == 2:
+#             print("P", end=" ")
+#         elif num % 2 == 0:
+#             print("E", end=" ")
+#         else:
+#             print("O", end=" ")
+
+#     print()
+
+
+#35
+
+# n = int(input("Enter n: "))
+
+# for i in range(1, n + 1):
+#     for j in range(1, i + 1):
+
+#         prime = True
+
+#         if j < 2:
+#             prime = False
+#         else:
+#             for k in range(2, j):
+#                 if j % k == 0:
+#                     prime = False
+#                     break
+
+
+#         if prime:
+#             print("P", end=" ")
+#         elif j % 2 == 0:
+#             print("E", end=" ")
+#         else:
+#             print("O", end=" ")
+
+#     print()
+
+#36
+
+
+# total=0
+# rav=0
+# for i in range(1,6):
+#     print("coustmer",i)
+#     for j in range(3):
+#         price=int(input("enter price:-"))
+#         total+=price
+#     if total >= 2000:
+#         dis=(total*0.2)
+#     elif total >= 1000:
+#         dis=(total*0.1)
+#     else:
+#         dis=0
+
+#     total-=dis
+
+#     mam = input("you are mamber:-")
+#     if mam == "yes":
+#         dis=(total*0.05)
+#     else :
+#         dis = 0
+
+#     total-=dis
+#     print(f"your total bill is {total}₹")
+#     rav+=total
+# print(f"total ravenue of restaurant is {rav}₹")
+
+#37
+
+# word = input("Enter a word: ")
+
+# for i in range(len(word)):
+#     for j in range(i + 1):
+#         print(word[j], end="")
+#     print()
+
+# print("revers string")
+
+# for i in range(len(word) - 1, -1, -1):
+#     for j in range(i + 1):
+#         print(word[j], end="")
+#     print()
+
+#38
+
+# sentence = input("Enter a sentence: ")
+
+# words = sentence.split()
+
+# for i in range(len(words)):
+#     frequency = 0
+
+#     already_checked = False
+
+#     for k in range(i):
+#         if words[k] == words[i]:
+#             already_checked = True
+
+#     if already_checked == False:
+
+#         for j in range(len(words)):
+#             if words[i] == words[j]:
+#                 frequency += 1
+
+#         if frequency >= 2:
+
+#             print("Word:", words[i])
+#             print("Frequency:", frequency)
+
+#             if frequency == 2:
+#                 print("Repeated")
+#             elif frequency <= 4:
+#                 print("Frequently Repeated")
+#             else:
+#                 print("Highly Repeated")
+
+#             print()
+
+#39
+
+# for i in range (1,9):
+#     print(f"passanger{i}")
+#     age = int(input("enter your age:-"))
+#     dis = int(input("enter distance you want to cover:-"))
+#     price=10*dis
+#     if age > 60:
+#         dis = price*0.3
+#         price-=dis
+#     elif age <12:
+#         if age > 5:
+#             dis = price*.5
+#             price-=dis
+#     elif age < 5:
+#         price=0
+#         price-=dis
+#     else:
+#         price=price
+    
+#     print(f"you travel {dis}km and your ticket price {price}₹")
+
+#40
+
+# str1 = input("Enter first string: ")
+# str2 = input("Enter second string: ")
+
+# if len(str1) != len(str2):
+#     print("Not Mirror Compatible")
+# else:
+#     mirror = True
+
+#     for i in range(len(str1)):
+#         if str1[i] != str2[len(str2) - 1 - i]:
+#             mirror = False
+#             break
+
+#     if mirror:
+#         print("Mirror Compatible")
+#     else:
+#         print("Not Mirror Compatible")
+
+#41
+
+# for i in range(1,8):
+#     present = 0
+#     absent = 0
+#     print(f"student{i}")
+#     for j in range(1,6):
+#         attendence=input(f"student in day{j} is p/a:-")
+#         if attendence == "p":
+#             present+=1
+#         else:
+#             absent+=1
+       
+#     aper = (present/5)*100
+#     print(f"your atendence is {aper}%")
+#     if aper > 90:
+#         print("Excellent")
+#     elif aper > 75:
+#         print("Good")
+#     else:
+#         print("warning")
+
+#42
+
+
+# msum=0
+# ssum=0
+# meven=0
+# seven=0
+# for i in range(1,5):
+#     for j in range(1,5):
+#         in1=int(input(f"enter number({i},{j})"))
+#         if i == j:
+#             msum+=in1
+#             if in1%2 == 0:
+#                 meven+=1
+#         elif i+j == 5:
+#             ssum+=in1
+#             if in1%2 == 0:
+#                 seven+=1
+# print(f"sum of total number in main diogonal:-{msum}") 
+# print(f"sum of total number in secondry diogonal:-{ssum}")
+# print(f"sum of total even number in main diogonal:-{meven}")
+# print(f"sum of total even number in main diogonal:-{seven}")
+
+
+#43
+
+# word = input("Enter a word: ")
+
+# password = ""
+
+# for ch in word:
+
+#     if ch.isalpha():
+#         if ch.lower() in "aeiou":
+#             password += "@"
+
+#         if ch.lower() not in "aeiou":
+#             password += ch.lower()
+
+#     if ch.isdigit():
+#         password += "#"
+
+#     if ch == " ":
+#         password += "_"
+
+#     if not ch.isalpha() and not ch.isdigit() and ch != " ":
+#         password += "!"
+
+# print("Transformed result:", password)
+
+
+#44
+
+# balance = int(input("enter you bank balnce:-"))
+# total_deposits = 0
+# total_withdrawals = 0
+
+# n = int(input("Enter number of transactions: "))
+
+# for i in range(n):
+#     transaction = input("Enter D for Deposit or W for Withdrawal: ")
+#     amount = int(input("Enter amount: "))
+
+#     if transaction == "D":
+#         balance = balance + amount
+#         total_deposits = total_deposits + amount
+
+#     elif transaction == "W":
+#         balance = balance - amount
+#         total_withdrawals = total_withdrawals + amount
+
+#     if balance < 0:
+#         print("Balance:", balance, "Overdraft")
+
+#     elif balance < 500:
+#         print("Balance:", balance, "Low Balance")
+
+#     else:
+#         print("Balance:", balance, "Normal")
+
+# print("Total Deposits:", total_deposits)
+# print("Total Withdrawals:", total_withdrawals)
+# print("Final Balance:", balance)
+
+#45 by ai
+
+# word1 = input("Enter first word: ")
+# word2 = input("Enter second word: ")
+
+# result = ""
+
+# if len(word1) < len(word2):
+#     length = len(word1)
+# else:
+#     length = len(word2)
+
+# for i in range(length):
+#     if word1[i] == word2[i]:
+#         result = result + "S"
+#     else:
+#         result = result + "D"
+
+# print("Result:", result)
+
+# if len(word1) > len(word2):
+#     print("Extra characters:", word1[length:])
+
+# elif len(word2) > len(word1):
+#     print("Extra characters:", word2[length:])
+
+#46
+
+# n = int(input("Enter n: "))
+
+# for i in range(n):
+#     for j in range(n):
+
+#         if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+#             print("*", end="")
+
+#         elif (i + j) % 2 == 0:
+#             print("E", end="")
+
+#         else:
+#             print("O", end="")
+
+#     print()
+
+
+#47
+
+
+# available = 0
+# low = 0
+# critical = 0
+# out =0
+# hq=0
+# hp=""
+# for i in range (1,9):
+#     pn=input(f"enter name of product{i}:-")
+#     qn=int(input("enter quantities:-"))
+#     if qn > 20:
+#         print(f"{pn} is Available quantit")
+#         available+=1
+#     elif qn > 5:
+#         print(f"{pn}  is in low quantity")
+#         low+=1
+#     elif qn > 0:
+#         print(f"{pn} is in Critical quantit")
+#         critical+=1
+#     else:
+#         print(f"out of stock")
+#         out+=1
+#     if qn > hq:
+#         hp = pn
+
+
+# print(f"in available catgory product is {available}")
+# print(f"in critical catgory product is {critical}")
+# print(f"in low catgory product is {low}")
+# print(f"in out of stock catgory product is {out}")
+# print(f"highest quantity product is {hp}")
+
+#48
+
+# for i in range(10):
+#     username = input("Enter username: ")
+
+#     letters = 0
+#     digits = 0
+#     underscore = 0
+#     spaces = 0
+#     special = 0
+
+#     for ch in username:
+#         if ch.isalpha():
+#             letters += 1
+#         elif ch.isdigit():
+#             digits += 1
+#         elif ch == "_":
+#             underscore += 1
+#         elif ch == " ":
+#             spaces += 1
+#         else:
+#             special += 1
+
+#     length = len(username)
+
+#     print("Letters:", letters)
+#     print("Digits:", digits)
+#     print("Underscore:", underscore)
+#     print("Spaces:", spaces)
+#     print("Special characters:", special)
+#     print("Length:", length)
+
+#     if spaces > 0 or special > 0 or length < 5 or length > 15:
+#         print("Invalid")
+#     elif underscore > 0:
+#         print("Acceptable")
+#     else:
+#         print("Clean")
+
+
+#49 by ai
+
+# sentences = []
+
+# for i in range(10):
+#     sentence = input("Enter sentence " + str(i + 1) + ": ")
+#     sentences.append(sentence)
+
+# word = input("Enter search word: ")
+
+# total = 0
+
+# for i in range(10):
+#     sentence = sentences[i].lower()
+#     search_word = word.lower()
+
+#     words = sentence.split()
+#     occurrences = 0
+
+#     for j in range(len(words)):
+#         if words[j] == search_word:
+#             occurrences += 1
+
+#     if occurrences > 0:
+#         print("Sentence", i + 1, "->", occurrences, "time(s)")
+#         total += occurrences
+
+# print("Total occurrences:", total)
+
+#50
+
+# total_v = 0
+# total_c = 0
+# total_d = 0
+# total_s = 0
+
+# high_score = -1
+# high_vowels = -1
+# high_digits = -1
+
+# for i in range(10):
+
+#     text = input("Enter text: ")
+
+#     v = 0
+#     c = 0
+#     d = 0
+#     s = 0
+#     score = 0
+
+#     for ch in text:
+
+#         if ch.lower() in "aeiou":
+#             v += 1
+#             score += 2
+
+#         elif ch.isalpha():
+#             c += 1
+#             score += 1
+
+#         elif ch.isdigit():
+#             d += 1
+#             score += 3
+
+#         elif ch == " ":
+#             pass
+
+#         else:
+#             s += 1
+#             score += 4
+
+#     longest = ""
+#     for word in text.split():
+#         if len(word) > len(longest):
+#             longest = word
+
+#     repeated = 0
+#     for j in range(len(text)):
+#         for k in range(j):
+#             if text[j] == text[k]:
+#                 repeated += 1
+#                 break
+
+#     print("Vowels:", v, "Consonants:", c, "Digits:", d)
+#     print("Special:", s, "Longest:", longest)
+#     print("Repeated:", repeated, "Score:", score)
+
+#     if score > high_score:
+#         high_score = score
+#         high_score_text = text
+
+#     if v > high_vowels:
+#         high_vowels = v
+#         high_vowels_text = text
+
+#     if d > high_digits:
+#         high_digits = d
+#         high_digits_text = text
+
+#     total_v += v
+#     total_c += c
+#     total_d += d
+#     total_s += s
+
+
+# print("\n--- FINAL REPORT ---")
+# print("Highest Score:", high_score_text)
+# print("Most Vowels:", high_vowels_text)
+# print("Most Digits:", high_digits_text)
+
+# print("Total Vowels:", total_v)
+# print("Total Consonants:", total_c)
+# print("Total Digits:", total_d)
+# print("Total Special:", total_s)
+
+# if total_v + total_c > total_d and total_v + total_c > total_s:
+#     print("Text Heavy")
+# elif total_d > total_v + total_c and total_d > total_s:
+#     print("Number Heavy")
+# elif total_s > total_v + total_c and total_s > total_d:
+#     print("Special Character Heavy")
+# else:
+#     print("Balanced")
