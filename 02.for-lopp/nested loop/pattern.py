@@ -180,7 +180,17 @@
 
 #25
 
-for i in range(1,6):
-    for j in range(1,6):
-        print(i,end="")
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(i,end="")
+#     print()
+
+#extra
+
+num = 65
+
+for i in range(1,14):
+    for j in range(1,3):
+        print(chr(num),end="")
+        num+=1
     print()

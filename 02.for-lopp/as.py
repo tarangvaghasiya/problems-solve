@@ -270,7 +270,40 @@
 
 #9
 
-# --
+# text = input("Enter a string: ")
+
+# vowel = 0
+# consonant = 0
+# digit = 0
+# special = 0
+
+# for i in range(len(text)):
+
+#     ch = text[i]
+
+#     if i % 2 == 0:
+#         position_type = "Even"
+#     else:
+#         position_type = "Odd"
+
+#     # Check character type
+#     if ch.lower() in "aeiou":
+#         char_type = "Vowel"
+#         vowel += 1
+
+#     elif ch.isalpha():
+#         char_type = "Consonant"
+#         consonant += 1
+
+#     elif ch.isdigit():
+#         char_type = "Digit"
+#         digit += 1
+
+#     else:
+#         char_type = "Special Character"
+#         special += 1
+
+#     print(ch, "| Position:", i, "|", position_type, "|", char_type)
 
 #10 dout
 
@@ -297,41 +330,41 @@
 #11
 
 
-# for i in range(5):
-#     user=input(f"enter user name{i}")
+for i in range(5):
+    user=input(f"enter user name{i}")
 
-#     lengh=len(user)
-#     digit = 0
-#     under=0
-#     invalid = False
+    lengh=len(user)
+    digit = 0
+    under=0
+    invalid = False
 
-#     if user[0].isalpha():
-#         first_character = True
-#     else:
-#         first_character = False
+    if user[0].isalpha():
+        first_character = True
+    else:
+        first_character = False
 
-#     for wr in user:
-#         if wr.isdigit():
-#             digit+=1
-#         elif wr == "_":
-#             under+=1
-#         elif wr.isalpha():
-#             pass
-#         else:
-#             invalid = True
+    for wr in user:
+        if wr.isdigit():
+            digit+=1
+        elif wr == "_":
+            under+=1
+        elif wr.isalpha():
+            pass
+        else:
+            invalid = True
 
-#         if invalid:
-#             result = "Invalid"
-#         elif lengh >= 8 and first_character and digit >= 1:
-#             result = "Valid"
-#         else:
-#             result= "Needs Improvement"
+        if invalid:
+            result = "Invalid"
+        elif lengh >= 8 and first_character and digit >= 1:
+            result = "Valid"
+        else:
+            result= "Needs Improvement"
 
-#         print("lengh",lengh)
-#         print("digit",digit)
-#         print("underscore",under)
-#         print("result",result)
-#         print()
+    print("lengh",lengh)
+    print("digit",digit)
+    print("underscore",under)
+    print("result",result)
+    print()   
 
 
 
